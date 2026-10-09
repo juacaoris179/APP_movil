@@ -1,0 +1,12 @@
+## =============================================================================
+## CONFIGURACIÓN PRIVADA DE ANDROID - CAMPUS SABOR
+## Copia este contenido en android/local.properties
+## NOTA: android/local.properties está ignorado en Git para prevenir filtración.
+## =============================================================================
+
+# Ruta al Android SDK (se configura automáticamente por Android Studio)
+## sdk.dir=C\:\\Users\\tu_usuario\\AppData\\Local\\Android\\Sdk
+
+# Variables inyectadas en BuildConfig de la App Android
+SUPABASE_URL=https://tu-proyecto.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
