@@ -35,3 +35,8 @@ android/.externalNativeBuild/
 Thumbs.db
 desktop.ini
 *.log
+
+# Artefactos temporales de pruebas y dumps
+window_dump*.xml
+android_app_*.png
+supabase/.temp/

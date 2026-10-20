@@ -26,7 +26,7 @@ class OrderRepositoryImpl @Inject constructor(
     ): Result<Unit> = runCatching {
         val currentUser = auth.currentUserOrNull() ?: error("Usuario no autenticado")
 
-        val pedidoDto = PedidoDto(
+        val createDto = pe.campussabor.app.data.model.CreatePedidoDto(
             estudianteId = currentUser.id,
             menuDiaId = menuDiaId,
             horaRecojo = horaRecojo,
@@ -36,7 +36,7 @@ class OrderRepositoryImpl @Inject constructor(
         )
 
         // Se inserta en 'pedidos'. El trigger de PostgreSQL se encarga de calcular el total y la fecha.
-        postgrest.from("pedidos").insert(pedidoDto)
+        postgrest.from("pedidos").insert(createDto)
     }
 
     override suspend fun getMyOrders(): Result<List<Order>> = runCatching {

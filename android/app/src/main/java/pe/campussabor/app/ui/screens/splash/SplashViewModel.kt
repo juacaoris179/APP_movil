@@ -15,7 +15,7 @@ class SplashViewModel @Inject constructor(
     private val authRepository: AuthRepository
 ) : ViewModel() {
 
-    private val _navigationEvent = MutableSharedFlow<String>()
+    private val _navigationEvent = MutableSharedFlow<String>(replay = 1)
     val navigationEvent = _navigationEvent.asSharedFlow()
 
     init {
@@ -24,6 +24,7 @@ class SplashViewModel @Inject constructor(
 
     private fun checkSession() {
         viewModelScope.launch {
+            kotlinx.coroutines.delay(800)
             val user = authRepository.getCurrentUser()
             if (user != null && user.activo) {
                 _navigationEvent.emit(Screen.Menu.route)
