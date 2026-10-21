@@ -40,3 +40,9 @@ desktop.ini
 window_dump*.xml
 android_app_*.png
 supabase/.temp/
+
+# Python / AI Engine
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
