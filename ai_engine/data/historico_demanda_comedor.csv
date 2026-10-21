@@ -1,0 +1,289 @@
+fecha,plato_codigo,plato_nombre,categoria,precio,calorias,dia_semana,dia_semana_nombre,es_examenes,cantidad_pequena,cantidad_regular,cantidad_grande,cantidad_total
+2026-05-06,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,19,51,20,90
+2026-05-06,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,0,16,36,14,66
+2026-05-06,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,20,38,19,77
+2026-05-07,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,1,19,61,20,100
+2026-05-07,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,1,16,39,17,72
+2026-05-08,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,1,19,46,13,78
+2026-05-08,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,1,10,31,10,51
+2026-05-11,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,1,20,54,19,93
+2026-05-11,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,0,Lunes,1,18,51,16,85
+2026-05-12,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,1,17,53,16,86
+2026-05-12,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,1,13,35,16,64
+2026-05-12,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,1,13,47,14,74
+2026-05-13,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,1,14,43,18,75
+2026-05-13,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,1,18,57,19,94
+2026-05-13,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,1,13,30,11,54
+2026-05-14,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,1,17,43,16,76
+2026-05-14,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,1,20,55,17,92
+2026-05-15,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,1,16,50,17,83
+2026-05-15,PL-003,Seco de Res con Frejoles,carne,11.5,820,4,Viernes,1,14,37,9,60
+2026-05-18,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,1,18,53,19,90
+2026-05-18,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,1,17,51,17,85
+2026-05-19,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,1,20,59,23,102
+2026-05-19,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,1,16,45,17,78
+2026-05-19,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,1,8,35,9,52
+2026-05-20,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,1,13,36,13,62
+2026-05-20,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,1,17,49,17,83
+2026-05-20,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,1,10,26,12,48
+2026-05-21,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,27,65,26,118
+2026-05-21,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,0,18,50,19,87
+2026-05-22,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,17,38,14,69
+2026-05-22,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,4,Viernes,0,17,52,14,83
+2026-05-25,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,0,33,79,33,145
+2026-05-25,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,24,49,21,94
+2026-05-26,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,0,21,49,21,91
+2026-05-26,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,18,47,17,82
+2026-05-26,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,23,56,19,98
+2026-05-27,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,21,52,25,98
+2026-05-27,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,14,44,13,71
+2026-05-27,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,18,49,15,82
+2026-05-28,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,22,58,21,101
+2026-05-28,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,0,21,54,20,95
+2026-05-29,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,22,53,18,93
+2026-05-29,PL-003,Seco de Res con Frejoles,carne,11.5,820,4,Viernes,0,23,55,14,92
+2026-06-01,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,0,22,54,18,94
+2026-06-01,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,0,Lunes,0,25,67,26,118
+2026-06-02,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,24,57,20,101
+2026-06-02,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,0,15,49,14,78
+2026-06-02,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,21,51,19,91
+2026-06-03,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,26,64,24,114
+2026-06-03,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,19,49,19,87
+2026-06-03,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,15,30,12,57
+2026-06-04,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,0,22,56,24,102
+2026-06-04,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,0,29,62,24,115
+2026-06-05,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,24,64,21,109
+2026-06-05,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,14,45,10,69
+2026-06-08,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,0,26,67,27,120
+2026-06-08,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,0,21,50,18,89
+2026-06-09,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,23,51,18,92
+2026-06-09,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,0,17,37,14,68
+2026-06-09,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,20,43,18,81
+2026-06-10,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,29,62,25,116
+2026-06-10,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,18,47,20,85
+2026-06-10,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,11,30,12,53
+2026-06-11,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,36,83,28,147
+2026-06-11,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,0,16,42,13,71
+2026-06-12,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,4,Viernes,0,21,59,18,98
+2026-06-12,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,15,34,6,55
+2026-06-15,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,0,26,63,24,113
+2026-06-15,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,0,24,60,22,106
+2026-06-16,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,22,58,19,99
+2026-06-16,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,17,35,17,69
+2026-06-16,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,21,52,19,92
+2026-06-17,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,18,53,18,89
+2026-06-17,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,0,14,32,16,62
+2026-06-17,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,14,48,17,79
+2026-06-18,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,3,Jueves,0,24,68,21,113
+2026-06-18,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,0,26,64,21,111
+2026-06-19,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,23,53,16,92
+2026-06-19,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,14,35,13,62
+2026-06-22,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,0,35,88,31,154
+2026-06-22,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,26,50,23,99
+2026-06-23,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,21,52,18,91
+2026-06-23,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,0,14,38,18,70
+2026-06-23,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,15,36,15,66
+2026-06-24,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,0,17,50,15,82
+2026-06-24,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,25,59,22,106
+2026-06-24,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,15,31,16,62
+2026-06-25,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,29,76,29,134
+2026-06-25,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,0,21,52,20,93
+2026-06-26,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,18,42,14,74
+2026-06-26,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,4,Viernes,0,20,54,16,90
+2026-06-29,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,0,32,81,28,141
+2026-06-29,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,0,24,64,23,111
+2026-06-30,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,29,59,24,112
+2026-06-30,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,20,47,17,84
+2026-06-30,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,0,14,32,10,56
+2026-07-01,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,25,52,21,98
+2026-07-01,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,21,50,15,86
+2026-07-01,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,8,29,9,46
+2026-07-02,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,1,27,73,26,126
+2026-07-02,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,1,12,41,10,63
+2026-07-03,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,1,13,43,12,68
+2026-07-03,PL-003,Seco de Res con Frejoles,carne,11.5,820,4,Viernes,1,13,42,12,67
+2026-07-06,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,1,20,56,21,97
+2026-07-06,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,1,18,51,18,87
+2026-07-07,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,1,16,50,18,84
+2026-07-07,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,1,13,53,16,82
+2026-07-07,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,1,10,33,13,56
+2026-07-08,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,1,17,51,16,84
+2026-07-08,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,1,15,40,13,68
+2026-07-08,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,1,9,26,8,43
+2026-07-09,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,3,Jueves,1,20,64,24,108
+2026-07-09,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,1,11,40,14,65
+2026-07-10,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,1,13,49,14,76
+2026-07-10,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,1,12,33,9,54
+2026-07-13,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,1,23,68,26,117
+2026-07-13,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,1,17,57,20,94
+2026-07-14,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,1,18,55,19,92
+2026-07-14,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,1,13,41,13,67
+2026-07-14,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,1,8,27,8,43
+2026-07-15,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,1,18,58,20,96
+2026-07-15,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,1,13,45,16,74
+2026-07-15,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,1,7,26,11,44
+2026-07-16,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,35,86,35,156
+2026-07-16,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,0,19,43,19,81
+2026-07-17,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,16,45,17,78
+2026-07-17,PL-003,Seco de Res con Frejoles,carne,11.5,820,4,Viernes,0,16,48,12,76
+2026-07-20,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,0,Lunes,0,31,81,27,139
+2026-07-20,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,23,39,18,80
+2026-07-21,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,0,17,41,17,75
+2026-07-21,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,12,33,15,60
+2026-07-21,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,17,46,16,79
+2026-07-22,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,24,49,19,92
+2026-07-22,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,17,39,15,71
+2026-07-22,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,20,45,19,84
+2026-07-23,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,3,Jueves,0,21,56,20,97
+2026-07-23,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,0,25,65,23,113
+2026-07-24,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,24,67,18,109
+2026-07-24,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,18,43,11,72
+2026-07-27,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,0,32,75,29,136
+2026-07-27,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,13,42,15,70
+2026-07-28,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,21,46,21,88
+2026-07-28,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,13,33,13,59
+2026-07-28,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,20,44,14,78
+2026-07-29,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,21,46,20,87
+2026-07-29,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,0,19,40,18,77
+2026-07-29,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,9,33,7,49
+2026-07-30,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,3,Jueves,0,23,51,20,94
+2026-07-30,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,0,29,61,24,114
+2026-07-31,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,0,21,55,20,96
+2026-07-31,PL-003,Seco de Res con Frejoles,carne,11.5,820,4,Viernes,0,13,39,14,66
+2026-08-03,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,0,35,91,33,159
+2026-08-03,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,19,42,18,79
+2026-08-04,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,19,57,19,95
+2026-08-04,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,15,39,13,67
+2026-08-04,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,20,40,16,76
+2026-08-05,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,22,48,18,88
+2026-08-05,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,18,37,14,69
+2026-08-05,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,17,41,13,71
+2026-08-06,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,0,26,75,26,127
+2026-08-06,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,0,17,39,15,71
+2026-08-07,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,4,Viernes,0,25,70,19,114
+2026-08-07,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,15,33,11,59
+2026-08-10,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,0,26,54,25,105
+2026-08-10,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,0,Lunes,0,26,63,24,113
+2026-08-11,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,29,66,25,120
+2026-08-11,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,23,47,18,88
+2026-08-11,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,0,14,33,13,60
+2026-08-12,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,27,62,23,112
+2026-08-12,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,18,48,17,83
+2026-08-12,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,13,30,10,53
+2026-08-13,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,31,86,28,145
+2026-08-13,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,0,16,39,15,70
+2026-08-14,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,0,18,51,15,84
+2026-08-14,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,15,41,11,67
+2026-08-17,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,0,33,74,28,135
+2026-08-17,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,20,48,19,87
+2026-08-18,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,16,44,18,78
+2026-08-18,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,24,54,22,100
+2026-08-18,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,0,11,32,12,55
+2026-08-19,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,23,56,21,100
+2026-08-19,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,0,21,52,23,96
+2026-08-19,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,16,35,13,64
+2026-08-20,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,0,32,70,30,132
+2026-08-20,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,0,16,40,17,73
+2026-08-21,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,17,44,15,76
+2026-08-21,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,4,Viernes,0,20,50,15,85
+2026-08-24,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,0,32,74,30,136
+2026-08-24,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,0,23,56,23,102
+2026-08-25,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,20,51,20,91
+2026-08-25,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,18,46,19,83
+2026-08-25,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,0,10,27,10,47
+2026-08-26,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,21,50,20,91
+2026-08-26,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,0,16,38,16,70
+2026-08-26,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,10,29,14,53
+2026-08-27,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,1,19,59,21,99
+2026-08-27,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,1,16,52,19,87
+2026-08-28,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,1,14,49,16,79
+2026-08-28,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,1,10,33,10,53
+2026-08-31,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,0,Lunes,1,20,62,25,107
+2026-08-31,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,1,16,66,20,102
+2026-09-01,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,1,19,50,17,86
+2026-09-01,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,1,19,54,16,89
+2026-09-01,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,1,13,34,11,58
+2026-09-02,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,1,13,43,17,73
+2026-09-02,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,1,10,36,12,58
+2026-09-02,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,1,11,35,16,62
+2026-09-03,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,1,21,64,23,108
+2026-09-03,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,1,15,48,18,81
+2026-09-04,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,1,17,54,15,86
+2026-09-04,PL-003,Seco de Res con Frejoles,carne,11.5,820,4,Viernes,1,15,45,9,69
+2026-09-07,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,1,25,72,24,121
+2026-09-07,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,1,13,40,12,65
+2026-09-08,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,1,11,43,13,67
+2026-09-08,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,1,15,46,15,76
+2026-09-08,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,1,12,26,7,45
+2026-09-09,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,1,13,29,19,61
+2026-09-09,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,1,11,34,14,59
+2026-09-09,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,1,16,38,16,70
+2026-09-10,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,32,71,29,132
+2026-09-10,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,0,13,34,14,61
+2026-09-11,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,16,47,14,77
+2026-09-11,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,4,Viernes,0,18,53,16,87
+2026-09-14,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,0,Lunes,0,32,85,32,149
+2026-09-14,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,18,43,18,79
+2026-09-15,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,18,43,18,79
+2026-09-15,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,22,55,19,96
+2026-09-15,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,0,11,34,10,55
+2026-09-16,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,22,50,19,91
+2026-09-16,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,23,57,22,102
+2026-09-16,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,14,32,17,63
+2026-09-17,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,0,31,68,30,129
+2026-09-17,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,3,Jueves,0,15,43,14,72
+2026-09-18,PL-003,Seco de Res con Frejoles,carne,11.5,820,4,Viernes,0,20,56,18,94
+2026-09-18,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,13,38,13,64
+2026-09-21,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,0,27,66,22,115
+2026-09-21,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,0,Lunes,0,31,76,27,134
+2026-09-22,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,25,59,20,104
+2026-09-22,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,0,18,42,16,76
+2026-09-22,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,0,12,30,10,52
+2026-09-23,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,22,58,22,102
+2026-09-23,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,0,20,57,21,98
+2026-09-23,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,15,40,14,69
+2026-09-24,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,0,21,49,17,87
+2026-09-24,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,3,Jueves,0,22,62,23,107
+2026-09-25,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,4,Viernes,0,24,55,21,100
+2026-09-25,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,14,38,12,64
+2026-09-28,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,0,29,72,29,130
+2026-09-28,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,0,22,48,20,90
+2026-09-29,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,0,18,40,20,78
+2026-09-29,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,17,45,13,75
+2026-09-29,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,21,49,19,89
+2026-09-30,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,19,56,19,94
+2026-09-30,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,2,Miércoles,0,20,38,16,74
+2026-09-30,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,18,48,17,83
+2026-10-01,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,30,71,27,128
+2026-10-01,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,0,21,54,17,92
+2026-10-02,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,0,25,68,21,114
+2026-10-02,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,15,33,9,57
+2026-10-05,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,0,31,69,25,125
+2026-10-05,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,18,45,19,82
+2026-10-06,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,27,64,24,115
+2026-10-06,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,1,Martes,0,17,52,18,87
+2026-10-06,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,0,15,33,8,56
+2026-10-07,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,26,59,26,111
+2026-10-07,PL-003,Seco de Res con Frejoles,carne,11.5,820,2,Miércoles,0,20,44,18,82
+2026-10-07,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,13,27,13,53
+2026-10-08,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,26,61,25,112
+2026-10-08,PL-003,Seco de Res con Frejoles,carne,11.5,820,3,Jueves,0,18,48,15,81
+2026-10-09,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,0,23,55,15,93
+2026-10-09,PL-003,Seco de Res con Frejoles,carne,11.5,820,4,Viernes,0,14,38,13,65
+2026-10-12,PL-003,Seco de Res con Frejoles,carne,11.5,820,0,Lunes,0,31,77,31,139
+2026-10-12,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,20,57,21,98
+2026-10-13,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,22,51,20,93
+2026-10-13,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,13,43,12,68
+2026-10-13,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,1,Martes,0,18,48,15,81
+2026-10-14,PL-001,Lomo Saltado Universitario,carne,12.0,750,2,Miércoles,0,24,54,19,97
+2026-10-14,PL-004,Milanesa de Pollo con Ensalada Fresca,pollo,10.5,620,2,Miércoles,0,23,45,18,86
+2026-10-14,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,2,Miércoles,0,11,30,10,51
+2026-10-15,PL-001,Lomo Saltado Universitario,carne,12.0,750,3,Jueves,0,25,63,21,109
+2026-10-15,PL-002,Ají de Gallina Tradicional,pollo,10.0,680,3,Jueves,0,19,49,16,84
+2026-10-16,PL-001,Lomo Saltado Universitario,carne,12.0,750,4,Viernes,0,24,67,21,112
+2026-10-16,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,4,Viernes,0,10,32,12,54
+2026-10-19,PL-001,Lomo Saltado Universitario,carne,12.0,750,0,Lunes,0,33,82,30,145
+2026-10-19,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,0,Lunes,0,14,45,13,72
+2026-10-20,PL-001,Lomo Saltado Universitario,carne,12.0,750,1,Martes,0,26,63,25,114
+2026-10-20,PL-003,Seco de Res con Frejoles,carne,11.5,820,1,Martes,0,20,49,18,87
+2026-10-20,PL-005,Estofado de Lentejas Campestre (Opción Vegetariana),vegetariano,8.5,510,1,Martes,0,15,34,12,61

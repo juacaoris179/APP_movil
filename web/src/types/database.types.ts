@@ -183,6 +183,49 @@ export interface Database {
           }
         ]
       }
+      predicciones_demanda: {
+        Row: {
+          id: string
+          fecha: string
+          plato_id: string
+          porcion: TamanoPorcion
+          cantidad_predicha: number
+          confianza_score: number
+          metadatos: Json
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          fecha: string
+          plato_id: string
+          porcion: TamanoPorcion
+          cantidad_predicha: number
+          confianza_score?: number
+          metadatos?: Json
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          fecha?: string
+          plato_id?: string
+          porcion?: TamanoPorcion
+          cantidad_predicha?: number
+          confianza_score?: number
+          metadatos?: Json
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "predicciones_demanda_plato_id_fkey"
+            columns: ["plato_id"]
+            referencedRelation: "platos"
+            referencedColumns: ["id"]
+          }
+        ]
+      }
     }
     Views: {
       demanda_dia: {

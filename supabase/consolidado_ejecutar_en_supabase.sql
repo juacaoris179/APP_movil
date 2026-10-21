@@ -384,3 +384,83 @@ SELECT CURRENT_DATE + INTERVAL '1 day', id, 80
 FROM public.platos
 WHERE codigo IN ('PL-003', 'PL-004')
 ON CONFLICT (fecha, plato_id) DO NOTHING;
+
+-- ============================================================================
+-- PARTE 5: MIGRACIÓN 004 - PREDICCIONES DE DEMANDA (MODELO IA)
+-- ============================================================================
+CREATE TABLE IF NOT EXISTS public.predicciones_demanda (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    fecha DATE NOT NULL,
+    plato_id UUID NOT NULL REFERENCES public.platos(id) ON DELETE CASCADE,
+    porcion public.tamano_porcion NOT NULL,
+    cantidad_predicha INTEGER NOT NULL CHECK (cantidad_predicha >= 0),
+    confianza_score NUMERIC(4,3) NOT NULL DEFAULT 0.850 CHECK (confianza_score >= 0.0 AND confianza_score <= 1.0),
+    metadatos JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    CONSTRAINT uq_prediccion_fecha_plato_porcion UNIQUE (fecha, plato_id, porcion)
+);
+
+CREATE INDEX IF NOT EXISTS idx_predicciones_fecha ON public.predicciones_demanda(fecha);
+CREATE INDEX IF NOT EXISTS idx_predicciones_plato ON public.predicciones_demanda(plato_id);
+
+ALTER TABLE public.predicciones_demanda ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY predicciones_leer ON public.predicciones_demanda FOR SELECT
+    USING (public.es_staff());
+
+CREATE POLICY predicciones_insertar ON public.predicciones_demanda FOR INSERT
+    WITH CHECK (public.es_staff());
+
+CREATE POLICY predicciones_actualizar ON public.predicciones_demanda FOR UPDATE
+    USING (public.es_staff())
+    WITH CHECK (public.es_staff());
+
+CREATE POLICY predicciones_eliminar ON public.predicciones_demanda FOR DELETE
+    USING (public.es_admin());
+
+-- Predicciones de Demanda Iniciales generadas por el Modelo de IA
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'pequena'::public.tamano_porcion, 26, 0.920, '{"modelo": "RandomForest_MultiOutput", "calorias": 750}'::jsonb
+FROM public.platos WHERE codigo = 'PL-001'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;
+
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'regular'::public.tamano_porcion, 67, 0.920, '{"modelo": "RandomForest_MultiOutput", "calorias": 750}'::jsonb
+FROM public.platos WHERE codigo = 'PL-001'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;
+
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'grande'::public.tamano_porcion, 24, 0.920, '{"modelo": "RandomForest_MultiOutput", "calorias": 750}'::jsonb
+FROM public.platos WHERE codigo = 'PL-001'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;
+
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'pequena'::public.tamano_porcion, 20, 0.910, '{"modelo": "RandomForest_MultiOutput", "calorias": 680}'::jsonb
+FROM public.platos WHERE codigo = 'PL-002'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;
+
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'regular'::public.tamano_porcion, 53, 0.910, '{"modelo": "RandomForest_MultiOutput", "calorias": 680}'::jsonb
+FROM public.platos WHERE codigo = 'PL-002'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;
+
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'grande'::public.tamano_porcion, 21, 0.910, '{"modelo": "RandomForest_MultiOutput", "calorias": 680}'::jsonb
+FROM public.platos WHERE codigo = 'PL-002'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;
+
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'pequena'::public.tamano_porcion, 14, 0.880, '{"modelo": "RandomForest_MultiOutput", "calorias": 510}'::jsonb
+FROM public.platos WHERE codigo = 'PL-005'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;
+
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'regular'::public.tamano_porcion, 38, 0.880, '{"modelo": "RandomForest_MultiOutput", "calorias": 510}'::jsonb
+FROM public.platos WHERE codigo = 'PL-005'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;
+
+INSERT INTO public.predicciones_demanda (fecha, plato_id, porcion, cantidad_predicha, confianza_score, metadatos)
+SELECT CURRENT_DATE, id, 'grande'::public.tamano_porcion, 14, 0.880, '{"modelo": "RandomForest_MultiOutput", "calorias": 510}'::jsonb
+FROM public.platos WHERE codigo = 'PL-005'
+ON CONFLICT (fecha, plato_id, porcion) DO NOTHING;

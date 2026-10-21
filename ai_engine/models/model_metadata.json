@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "fecha_entrenamiento": "2026-10-21T12:51:51.394012",
+  "algoritmo": "MultiOutputRegressor(RandomForestRegressor)",
+  "features": [
+    "dia_semana",
+    "es_inicio_semana",
+    "es_viernes",
+    "es_examenes",
+    "precio",
+    "calorias",
+    "plato_PL-001",
+    "plato_PL-002",
+    "plato_PL-003",
+    "plato_PL-004",
+    "plato_PL-005",
+    "cat_carne",
+    "cat_pollo",
+    "cat_vegetariano"
+  ],
+  "targets": [
+    "cantidad_pequena",
+    "cantidad_regular",
+    "cantidad_grande",
+    "cantidad_total"
+  ],
+  "metricas": {
+    "cantidad_pequena": {
+      "MAE": 2.37,
+      "RMSE": 3.01,
+      "R2": 0.722
+    },
+    "cantidad_regular": {
+      "MAE": 5.41,
+      "RMSE": 7.09,
+      "R2": 0.7083
+    },
+    "cantidad_grande": {
+      "MAE": 2.69,
+      "RMSE": 3.4,
+      "R2": 0.618
+    },
+    "cantidad_total": {
+      "MAE": 9.11,
+      "RMSE": 11.95,
+      "R2": 0.7453
+    }
+  },
+  "ejemplo_mae_total": 9.11,
+  "precision_promedio_raciones": "Error menor a +/- 9.11 raciones"
+}
