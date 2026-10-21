@@ -55,3 +55,16 @@ export async function eliminarDelMenu(menuId: string) {
   revalidatePath('/dashboard')
   return { success: true }
 }
+
+export async function generarPrediccionesParaFecha(fecha: string) {
+  const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) throw new Error('No autenticado')
+
+  const { sincronizarPrediccionesIA } = await import('@/lib/ai/predictDemand')
+  const res = await sincronizarPrediccionesIA(fecha)
+
+  revalidatePath('/menu')
+  revalidatePath('/dashboard')
+  return res
+}

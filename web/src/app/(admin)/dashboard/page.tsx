@@ -9,12 +9,18 @@ import {
   Target,
   CheckCircle2,
 } from 'lucide-react'
+import DashboardDateFilter from './DashboardDateFilter'
+import SyncAIButton from './SyncAIButton'
 
 export const dynamic = 'force-dynamic'
 
-export default async function DashboardPage() {
+export default async function DashboardPage({
+  searchParams,
+}: {
+  searchParams?: { fecha?: string }
+}) {
   const supabase = createClient()
-  const today = new Date().toISOString().split('T')[0]
+  const today = searchParams?.fecha || new Date().toISOString().split('T')[0]
 
   // 1. Consultar la vista de demanda agregada real
   const { data: demanda } = await supabase
@@ -110,26 +116,29 @@ export default async function DashboardPage() {
   return (
     <div className="space-y-8">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
             Demanda y Pronóstico de Cocina en Tiempo Real
           </h1>
           <p className="text-sm text-slate-400 mt-1 flex items-center gap-1.5">
             <Calendar className="w-4 h-4 text-emerald-400" />
-            Almuerzo del día: <span className="font-semibold text-slate-200">{today}</span>
+            Servicio seleccionado: <span className="font-semibold text-slate-200">{today}</span>
           </p>
         </div>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex flex-wrap items-center gap-2.5">
+          <DashboardDateFilter currentDate={today} />
+          <SyncAIButton fecha={today} />
+
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
             <BrainCircuit className="w-4 h-4" />
-            <span>Motor IA Activo</span>
+            <span>Motor IA</span>
           </div>
 
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
             <Sparkles className="w-4 h-4" />
-            <span>PostgreSQL Reactivo</span>
+            <span>Realtime</span>
           </div>
         </div>
       </div>

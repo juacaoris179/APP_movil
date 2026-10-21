@@ -1,6 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { createClient } from '@/lib/supabase/client'
 import {
   Clock,
   User,
@@ -47,16 +49,50 @@ const ESTADOS: { key: EstadoPedido; label: string; badgeColor: string }[] = [
 ]
 
 export default function OrdersKanban({ initialPedidos }: OrdersKanbanProps) {
+  const router = useRouter()
+  const [pedidos, setPedidos] = useState<PedidoItem[]>(initialPedidos)
   const [loadingId, setLoadingId] = useState<string | null>(null)
   const [filterEstado, setFilterEstado] = useState<'todos' | EstadoPedido>('todos')
 
+  useEffect(() => {
+    setPedidos(initialPedidos)
+  }, [initialPedidos])
+
+  // Suscripción Realtime a cambios en pedidos para refresco instantáneo en cocina
+  useEffect(() => {
+    const supabase = createClient()
+    const channel = supabase
+      .channel('pedidos-realtime-kitchen')
+      .on(
+        'postgres_changes',
+        { event: '*', schema: 'public', table: 'pedidos' },
+        () => {
+          router.refresh()
+        }
+      )
+      .subscribe()
+
+    return () => {
+      supabase.removeChannel(channel)
+    }
+  }, [router])
+
   async function handleAdvance(pedidoId: string, siguienteEstado: EstadoPedido) {
     setLoadingId(pedidoId)
-    await cambiarEstadoPedido(pedidoId, siguienteEstado)
+    // Actualización optimista inmediata en la UI
+    setPedidos((prev) =>
+      prev.map((p) => (p.id === pedidoId ? { ...p, estado: siguienteEstado } : p))
+    )
+    const res = await cambiarEstadoPedido(pedidoId, siguienteEstado)
+    if (res?.error) {
+      router.refresh()
+    } else {
+      router.refresh()
+    }
     setLoadingId(null)
   }
 
-  const pedidosFiltrados = initialPedidos.filter((p) =>
+  const pedidosFiltrados = pedidos.filter((p) =>
     filterEstado === 'todos' ? true : p.estado === filterEstado
   )
 

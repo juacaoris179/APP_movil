@@ -2,8 +2,13 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Calendar, Plus, Trash2, Check, Loader2, Utensils, AlertCircle } from 'lucide-react'
-import { agregarPlatoAlMenu, actualizarCantidadPreparada, eliminarDelMenu } from './actions'
+import { Calendar, Plus, Trash2, Check, Loader2, Utensils, AlertCircle, BrainCircuit } from 'lucide-react'
+import {
+  agregarPlatoAlMenu,
+  actualizarCantidadPreparada,
+  eliminarDelMenu,
+  generarPrediccionesParaFecha,
+} from './actions'
 
 export interface PlatoOption {
   id: string
@@ -46,6 +51,29 @@ export default function MenuManager({
   const [error, setError] = useState<string | null>(null)
   const [editingId, setEditingId] = useState<string | null>(null)
   const [editQty, setEditQty] = useState<number>(0)
+  const [syncingAI, setSyncingAI] = useState(false)
+  const [aiSuccessMsg, setAiSuccessMsg] = useState<string | null>(null)
+
+  async function handleSyncAI() {
+    setSyncingAI(true)
+    setAiSuccessMsg(null)
+    setError(null)
+    try {
+      const res = await generarPrediccionesParaFecha(selectedDate)
+      if (res?.success) {
+        setAiSuccessMsg(res.mensaje)
+        router.refresh()
+        setTimeout(() => setAiSuccessMsg(null), 5000)
+      } else {
+        setError(res?.mensaje || 'Error al generar predicciones de IA.')
+      }
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err)
+      setError(`Fallo al conectar con el servicio de IA: ${msg}`)
+    } finally {
+      setSyncingAI(false)
+    }
+  }
 
   function handleDateChange(newDate: string) {
     setSelectedDate(newDate)
@@ -94,13 +122,37 @@ export default function MenuManager({
           </div>
         </div>
 
-        <input
-          type="date"
-          value={selectedDate}
-          onChange={(e) => handleDateChange(e.target.value)}
-          className="px-4 py-2 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:border-emerald-500 focus:outline-none"
-        />
+        <div className="flex flex-wrap items-center gap-2.5">
+          <input
+            type="date"
+            value={selectedDate}
+            onChange={(e) => handleDateChange(e.target.value)}
+            className="px-4 py-2 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:border-emerald-500 focus:outline-none"
+          />
+
+          <button
+            type="button"
+            onClick={handleSyncAI}
+            disabled={syncingAI || menuItems.length === 0}
+            className="flex items-center gap-1.5 px-3.5 py-2 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 text-white rounded-xl text-xs font-semibold shadow-sm transition whitespace-nowrap"
+            title="Generar estimación cuantitativa con IA para este menú"
+          >
+            {syncingAI ? (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            ) : (
+              <BrainCircuit className="w-4 h-4" />
+            )}
+            <span>{syncingAI ? 'Calculando...' : 'Predecir con IA'}</span>
+          </button>
+        </div>
       </div>
+
+      {aiSuccessMsg && (
+        <div className="flex items-center gap-2 p-3.5 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-medium animate-in fade-in">
+          <Check className="w-4 h-4 text-emerald-400 shrink-0" />
+          <span>{aiSuccessMsg}</span>
+        </div>
+      )}
 
       {/* Formulario para Asignar Plato (Solo Admin) */}
       {canManagePlatos && (
